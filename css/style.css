@@ -6,11 +6,13 @@
 /* Include this line so that nested elements are contained within their parents in sizing */
 *{
     box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Body */
-main, body{
+body{
     padding: 0px 10px;
+    margin: 20px 0px;
 }
 
 .photo-container{
@@ -27,7 +29,6 @@ img{
 
 .gallery{
     display:inline-block;
-    justify-content: center;
     align-items: center;
     width:100%;
     padding: 10px 0px;
