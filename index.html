@@ -6,7 +6,9 @@
 	    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
 	    <meta content="Matt Anderson" name="author">
     	<link rel="icon" href="photos/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="./src/plugins/Magnific-Popup/dist/magnific-popup.css"/>
     </head>
     <body>
         <main>
@@ -33,7 +35,9 @@
                         <img src="photos/thumbnails/06.jpg">
                     </div>
                     <div class="photo-container">
-                        <img src="photos/thumbnails/07.jpg">
+                        <a href="./photos/07.jpg" title="photo-07" class="photo">
+                            <img src="photos/thumbnails/07.jpg">
+                        </a>
                     </div>
                     <div class="photo-container">
                         <img src="photos/thumbnails/08.jpg">
@@ -53,6 +57,13 @@
                 </div>
             </div>
         </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Magnific Popup core JS file -->
+        <script src="./src/plugins/Magnific-Popup/dist/jquery.magnific-popup.js"></script>
+        <script src="./src/App.js" type="text/javascript"></script>
+        <script> $('.photo').magnificPop({
+            type:'image'
+        });</script>
     </body>
     <footer>
         <h2 class="footer-header">Contact</h2>
