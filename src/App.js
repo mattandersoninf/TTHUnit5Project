@@ -14,4 +14,6 @@ $(document).ready(function(){
             $(this).toggle($(this).text().toLowerCase().indexOf(searchable) > -1)
         });
     });
+
+    
 });
