@@ -2,14 +2,16 @@
 
 $(document).ready(function(){
     // grab the information from of the search input
-    var selectableList = $('.gallery');
-
-    selectableList.selectable({
-        stop: getSelectedItems
-    })
-
-    fucntion getSelectedItems(){
-        var selectedItems = '';
-        $('.ui')
-    }
-})
+    $("#search").on("keyup", function(){
+        // grab the text that the user has typed
+        //use toLowerCase so that it will still return the correct result if the user uses upper case
+        var searchable = $(this).val().toLowerCase();
+        /* 
+        Toggle the visibility of the figures that have the photo-container class.
+        If the searchable text matches part of the text within the figure, it will be visible, you won't see it otherwise.
+        */
+        $(".gallery .photo-container").filter(function(){
+            $(this).toggle($(this).text().toLowerCase().indexOf(searchable) > -1)
+        });
+    });
+});

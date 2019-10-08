@@ -75,9 +75,12 @@ img{
 	margin: 0 auto; 
 }
 
-caption{
-    display: none;
+/*
+.mfp-figure, .mfp-bg{
+    position:fixed;
+    max-width:100%;
 }
+*/
 
 @media screen and (min-width:768px){
     .gallery{
