@@ -11,9 +11,7 @@ $(document).ready(function(){
         If the searchable text matches part of the text within the figure, it will be visible, you won't see it otherwise.
         */
         $(".gallery .photo-container").filter(function(){
-            $(this).toggle($(this).text().toLowerCase().indexOf(searchable) > -1)
+            $(this).toggle($(this).find('a').attr('title').toLowerCase().indexOf(searchable) > -1)
         });
     });
-
-    
 });
